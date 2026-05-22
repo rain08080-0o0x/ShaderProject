@@ -178,8 +178,8 @@ void CameraDCC::UpdateFlight(Argument& arg)
 	DirectX::XMVECTOR vCamMove = DirectX::XMVectorZero();
 	if (IsKeyPress('W')) vCamMove = DirectX::XMVectorAdd(vCamMove, arg.vCamFront);
 	if (IsKeyPress('S')) vCamMove = DirectX::XMVectorSubtract(vCamMove, arg.vCamFront);
-	if (IsKeyPress('A')) vCamMove = DirectX::XMVectorSubtract(vCamMove, arg.vCamSide);
-	if (IsKeyPress('D')) vCamMove = DirectX::XMVectorAdd(vCamMove, arg.vCamSide);
+	if (IsKeyPress('D')) vCamMove = DirectX::XMVectorSubtract(vCamMove, arg.vCamSide);
+	if (IsKeyPress('A')) vCamMove = DirectX::XMVectorAdd(vCamMove, arg.vCamSide);
 	if (IsKeyPress('Q')) vCamMove = DirectX::XMVectorAdd(vCamMove, DirectX::XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f));
 	if (IsKeyPress('E')) vCamMove = DirectX::XMVectorAdd(vCamMove, DirectX::XMVectorSet(0.0f,-1.0f, 0.0f, 0.0f));
 	vCamMove = DirectX::XMVectorScale(vCamMove, m_pComponent->GetFar() * 0.0001f);

@@ -6,11 +6,14 @@
 class SceneShading : public SceneBase
 {
 public:
-	SceneShading() : SceneBase("Shading") {}
+	SceneShading() : SceneBase("Shading"), m_specularAmbientPower(1.0f) {}
 	void Init();
 	void Uninit();
 	void Update(float tick);
 	void Draw();
+
+private:
+	float m_specularAmbientPower;
 };
 
 #endif // __SCENE_SHADING_H__

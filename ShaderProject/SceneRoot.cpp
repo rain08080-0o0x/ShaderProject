@@ -8,6 +8,7 @@
 #include "ModelRenderer.h"
 
 #include "SceneShading.h"
+#include "SceneLighting.h"
 
 
 void SceneRoot::Init()
@@ -32,8 +33,11 @@ void SceneRoot::Init()
 		RemoveSubScene();
 		const char* name = reinterpret_cast<const char*>(arg);
 		if (strcmp(name, "Shading") == 0) AddSubScene<SceneShading>();
+		const char* Lname = reinterpret_cast<const char*>(arg);
+		if (strcmp(Lname, "Lighting") == 0) AddSubScene<SceneLighting>();
 	}, true);
 	list->AddListItem("Shading");
+	list->AddListItem("Lighting");
 	scene.AddItem(list);
 #else
 	// リリース時の開始シーン
