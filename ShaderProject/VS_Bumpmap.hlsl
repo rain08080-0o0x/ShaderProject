@@ -3,7 +3,6 @@ struct VS_IN
     float3 pos : POSITION;
     float3 normal : NORMAL0;
     float2 uv : TEXCOORD0;
-    float3 wPos : TEXCOORD0; // ワールド座標系でのピクセル位置
     float3 tangen : TANGENT; // 接ベクトル
 };
 
