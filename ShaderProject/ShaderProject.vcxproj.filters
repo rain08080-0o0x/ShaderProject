@@ -147,8 +147,11 @@
     <ClCompile Include="UnorderedAccessView.cpp">
       <Filter>ソース ファイル\DirectX</Filter>
     </ClCompile>
+    <ClCompile Include="SceneBumpmap.cpp">
+      <Filter>ソース ファイル\App\Scene</Filter>
+    </ClCompile>
     <ClCompile Include="SceneLighting.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\App\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -243,7 +246,10 @@
       <Filter>ヘッダー ファイル\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="SceneLighting.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\App\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBumpmap.h">
+      <Filter>ヘッダー ファイル\App\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -256,9 +262,32 @@
     <FxCompile Include="PS_Phong.hlsl">
       <Filter>リソース ファイル\PixelShader\Shading</Filter>
     </FxCompile>
-    <FxCompile Include="PS_Specular.hlsl" />
-    <FxCompile Include="PS_PointLight.hlsl" />
-    <FxCompile Include="PS_SpotLight.hlsl" />
-    <FxCompile Include="PS_RimLight.hlsl" />
+    <FxCompile Include="PS_Bumpmap.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="VS_Bumpmap.hlsl">
+      <Filter>リソース ファイル\VertexShader</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_AllLightins.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_PointLight.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_RimLight.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_RimLights.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_Specular.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_SpotLight.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_PBR.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

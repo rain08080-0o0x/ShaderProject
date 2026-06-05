@@ -33,7 +33,7 @@ float4 main(PS_IN pin) : SV_TARGET
 
     float3 N = normalize(pin.normal);
     float3 L = normalize(Ldir);
-    float3 V = normalize(pin.wPos - Cpos); // 視線の方向
+    float3 V = normalize(Cpos - pin.wPos); // 視線の方向
 
     // 1.法線と光の方向に依存するリムの強さ(P.141
     float power1 = 1.0f - max(0.0f, dot(L, N));
@@ -48,7 +48,15 @@ float4 main(PS_IN pin) : SV_TARGET
     float3 rimColor = rimPower * Lcolor.rgb;
     
     float4 color = tex.Sample(samp, pin.uv);
-    color.rgb += rimColor;
+    
+    
+    // 環境光で、ライトが当たっていない部分にも最低限の明るさを残す
+    float3 ambientColor = color.rgb * Lambient.rgb;
+
+    // リムライトを環境光に加算する
+    color.rgb = ambientColor + rimColor;
+    
+    //color.rgb += rimColor;
     
 
     return color;

@@ -633,9 +633,9 @@ void Menu::DrawImgui(Item* item)
 	// 小数項目の表示
 	case Item::Float:
 		if(isValue)
-			ImGui::InputFloat(item->GetName(), &pValue->value.fValue);
+			ImGui::DragFloat(item->GetName(), &pValue->value.fValue,0.01f);
 		else if(isBind)
-			ImGui::InputFloat(item->GetName(), reinterpret_cast<float*>(pBind->ptr));
+			ImGui::DragFloat(item->GetName(), reinterpret_cast<float*>(pBind->ptr), 0.01f);
 		else if (isCallback) {
 			pCallback->func(false, &pCallback->value.fValue);
 			if (ImGui::InputFloat(item->GetName(), &pCallback->value.fValue))
@@ -645,9 +645,9 @@ void Menu::DrawImgui(Item* item)
 	// ベクトル項目の表示
 	case Item::Vector:
 		if(isValue)
-			ImGui::InputFloat3(item->GetName(), &pValue->value.vec.x, "%.2f");
+			ImGui::DragFloat3(item->GetName(), &pValue->value.vec.x, 0.01f);
 		else if(isBind)
-			ImGui::InputFloat3(item->GetName(), reinterpret_cast<float*>(pBind->ptr), "%.2f");
+			ImGui::DragFloat3(item->GetName(), reinterpret_cast<float*>(pBind->ptr), 0.01f);
 		else if (isCallback) {
 			pCallback->func(false, &pCallback->value.vec.x);
 			if (ImGui::InputFloat3(item->GetName(), &pCallback->value.vec.x, "%.2f"))

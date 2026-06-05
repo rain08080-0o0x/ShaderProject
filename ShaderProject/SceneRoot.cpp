@@ -9,6 +9,7 @@
 
 #include "SceneShading.h"
 #include "SceneLighting.h"
+#include "SceneBumpmap.h"
 
 
 void SceneRoot::Init()
@@ -33,11 +34,12 @@ void SceneRoot::Init()
 		RemoveSubScene();
 		const char* name = reinterpret_cast<const char*>(arg);
 		if (strcmp(name, "Shading") == 0) AddSubScene<SceneShading>();
-		const char* Lname = reinterpret_cast<const char*>(arg);
-		if (strcmp(Lname, "Lighting") == 0) AddSubScene<SceneLighting>();
+		if (strcmp(name, "Lighting") == 0) AddSubScene<SceneLighting>();
+		if (strcmp(name, "BumpMap") == 0) AddSubScene<SceneBumpmap>();
 	}, true);
 	list->AddListItem("Shading");
 	list->AddListItem("Lighting");
+	list->AddListItem("BumpMap");
 	scene.AddItem(list);
 #else
 	// リリース時の開始シーン
