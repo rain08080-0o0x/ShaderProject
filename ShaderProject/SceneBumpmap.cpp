@@ -164,8 +164,8 @@ void SceneBumpmap::Draw()
 	pPS_POM_Redesigned->SetTexture(1, pNormalMap);
 	pPS_POM_Redesigned->SetTexture(2, pHeightMap);
 
-	//pPS_TestPOMBumpmap->WriteBuffer(0,lightParam);
-	pPS_TestPOMBumpmap->WriteBuffer(0,cameraParam);
+	pPS_TestPOMBumpmap->WriteBuffer(0,lightParam);
+	pPS_TestPOMBumpmap->WriteBuffer(1,cameraParam);
 	pPS_TestPOMBumpmap->SetTexture(1, pNormalMap);
 	pPS_TestPOMBumpmap->SetTexture(2, pHeightMap);
 
@@ -185,6 +185,7 @@ void SceneBumpmap::Draw()
 	Shader* psList[] = {
 		//pPS,
 		pPS_PBRDisney,
+		//pPS_PBR,
 	};
 
 	// ƒ‚ƒfƒ‹‚Ì•`‰æ

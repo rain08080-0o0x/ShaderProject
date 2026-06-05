@@ -8,7 +8,7 @@ struct PS_IN
     float3 tangent : TANGENT; // 接ベクトル
 };
 
-cbuffer Light : register(b1)
+cbuffer Light : register(b0)
 {
     float3 lightPos; // ライトのワールド座標
     float dummy; // 16バイトに揃えるためのダミー
@@ -17,7 +17,7 @@ cbuffer Light : register(b1)
     float4 Lcolor; // ライトの色
     float4 Lambient; // 環境光
 }
-cbuffer Camera : register(b0)
+cbuffer Camera : register(b1)
 {
     float3 Cpos;
     float heightScale;
@@ -90,7 +90,31 @@ float4 main(PS_IN pin) : SV_TARGET
 
     // 交差後UVと交差前UVを補間し、より正確なPOM後のUVを求める
     uv = lerp(nextObjPoint, prevObjPoint, weight);
+    
+    // POMで補正したUVを使ってベーステクスチャを取得する
+    float4 color = tex.Sample(samp, uv);
 
-    // POMで補正したUVを使って最終的な色を取得する
-    return tex.Sample(samp, uv);
+    // 法線マップもPOM後のUVで取得する
+    float3 localNormal = normalMap.Sample(samp, uv).xyz;
+
+    // 法線マップの0～1の値を-1～1に変換する
+    localNormal = normalize(localNormal * 2.0f - 1.0f);
+
+    // 接空間の法線をワールド空間へ変換する
+    float3 finalNormal = normalize(T * localNormal.x + B * localNormal.y + N * localNormal.z);
+
+    // ライト方向を正規化する
+    float3 L = normalize(-Ldir);
+
+    // 拡散反射の強さを計算する
+    float diffuse = saturate(dot(finalNormal, L));
+
+    // ライト色と環境光を合成する
+    float3 lighting = Lcolor.rgb * diffuse + Lambient.rgb;
+
+    // テクスチャ色にライトの色を乗算する
+    color.rgb *= lighting;
+
+    // 最終色を返す
+    return float4(saturate(color.rgb), color.a);
 }
