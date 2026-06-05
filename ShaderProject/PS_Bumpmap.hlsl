@@ -67,7 +67,7 @@ float4 main(PS_IN pin) : SV_TARGET
     N = normalize(N);
     
     // 3.変換された法線とライトで拡散反射を計算
-    float3 L = normalize(Ldir);
+    float3 L = normalize(float3(Ldir.x,Ldir.y,-Ldir.z));
     float d = dot(N, L);
     d = saturate(-d);
     

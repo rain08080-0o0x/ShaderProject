@@ -25,6 +25,12 @@ void SceneBumpmap::Init()
 		"PS_TexColor",
 		"VS_Bumpmap",// バンプマップの頂点シェーダー
 		"PS_Bumpmap",// バンプマップのピクセルシェーダー
+		"PS_PBR", // 物理ベースレンダリング
+		"PS_PBR_Disney",
+		"PS_POM",
+		"VS_Object_POM",
+		"PS_POM_Redesigned",
+		"PS_TestPOMBumpmap",
 	};
 	Setup(file, _countof(file), 1);
 
@@ -37,8 +43,15 @@ void SceneBumpmap::Init()
 	pPlane->Load("Assets/Model/plane/plane.fbx");
 	pPlane->RemakeVertex(sizeof(TangentVtx), CalcTangent);
 
-	Texture* pHeieghtMap = CreateObj<Texture>("HightMap");
-	pHeieghtMap->Create("Assets/Model/plane/height.png");
+	Texture* pHeightMap = CreateObj<Texture>("HeightMap");
+	pHeightMap->Create("Assets/Model/plane/height.png");
+#ifdef _DEBUG
+	debug::Menu::Get("00_Info").AddItem(debug::Item::CreateBind("PBR Metallic", debug::Item::Float, &m_metallic));
+	debug::Menu::Get("00_Info").AddItem(debug::Item::CreateBind("PBR Roughness", debug::Item::Float, &m_roughness));
+	debug::Menu::Get("00_Info").AddItem(debug::Item::CreateBind("PBR Specular", debug::Item::Float, &m_specular));
+	debug::Menu::Get("00_Info").AddItem(debug::Item::CreateBind("PBR BaseColorPower", debug::Item::Float, &m_baseColorPower));
+	debug::Menu::Get("00_Info").AddItem(debug::Item::CreateBind("POM HeightScale", debug::Item::Float, &m_heightScale));
+#endif
 }
 void SceneBumpmap::Uninit()
 {
@@ -75,6 +88,12 @@ void SceneBumpmap::Draw()
 	Shader* pPS = GetObj<Shader>("PS_TexColor");
 	Shader* pVS_Bumpmap = GetObj<Shader>("VS_Bumpmap");
 	Shader* pPS_Bumpmap = GetObj<Shader>("PS_Bumpmap");
+	Shader* pPS_PBR = GetObj<Shader>("PS_PBR");
+	Shader* pPS_PBRDisney = GetObj<Shader>("PS_PBR_Disney");
+	Shader* pPS_POM = GetObj<Shader>("PS_POM");
+	Shader* pVS_Object_POM = GetObj<Shader>("VS_Object_POM");
+	Shader* pPS_POM_Redesigned = GetObj<Shader>("PS_POM_Redesigned");
+	Shader* pPS_TestPOMBumpmap = GetObj<Shader>("PS_TestPOMBumpmap");
 
 	// 定数バッファに渡す行列の情報を作成
 	DirectX::XMFLOAT4X4 mat[3];
@@ -101,13 +120,19 @@ void SceneBumpmap::Draw()
 		// ライトの色
 		pLightComp->GetDiffuse(),
 		// 環境光
-		//ambient
+		ambient
 	};
 
 	// カメラの情報を定数バッファで渡す
 	DirectX::XMFLOAT3 camPos = pCameraObj->GetPos();
 	DirectX::XMFLOAT4 cameraParam[] = {
-		{camPos.x, camPos.y, camPos.z, 0.0f}
+		{camPos.x, camPos.y, camPos.z, m_heightScale}
+	};
+	DirectX::XMFLOAT4 pbrParam[] = {
+		{m_metallic, m_roughness, m_specular, m_baseColorPower}
+	};
+	DirectX::XMFLOAT4 pomSetting[] = {
+	{ 16.0f, 64.0f, 0.0f, 0.0f }
 	};
 
 	pVS->WriteBuffer(0, mat);
@@ -125,15 +150,41 @@ void SceneBumpmap::Draw()
 	pPS_Bumpmap->WriteBuffer(0, lightParam);
 	pPS_Bumpmap->SetTexture(1, pNormalMap);
 	pPS_Bumpmap->SetTexture(2, pHeightMap);
+	pPS_PBR->WriteBuffer(0, lightParam);
+	pPS_PBR->WriteBuffer(1, cameraParam);
+	pPS_POM->WriteBuffer(0, lightParam);
+	pPS_POM->WriteBuffer(1, cameraParam);
+	pPS_POM->SetTexture(1, pNormalMap);
+	pPS_POM->SetTexture(2, pHeightMap);
+
+	pVS_Object_POM->WriteBuffer(0, mat);
+	pPS_POM_Redesigned->WriteBuffer(0, lightParam);
+	pPS_POM_Redesigned->WriteBuffer(1, cameraParam); 
+	pPS_POM_Redesigned->WriteBuffer(2, pomSetting);
+	pPS_POM_Redesigned->SetTexture(1, pNormalMap);
+	pPS_POM_Redesigned->SetTexture(2, pHeightMap);
+
+	//pPS_TestPOMBumpmap->WriteBuffer(0,lightParam);
+	pPS_TestPOMBumpmap->WriteBuffer(0,cameraParam);
+	pPS_TestPOMBumpmap->SetTexture(1, pNormalMap);
+	pPS_TestPOMBumpmap->SetTexture(2, pHeightMap);
+
+	pPS_PBRDisney->WriteBuffer(0, lightParam);
+	pPS_PBRDisney->WriteBuffer(1, cameraParam);
+	pPS_PBRDisney->WriteBuffer(2, pbrParam);
 
 	// 読み込んだモデルを直接表示
 	pPlane->SetVertexShader(pVS_Bumpmap);
-	pPlane->SetPixelShader(pPS_Bumpmap);
+	//pPlane->SetPixelShader(pPS_POM);
+	//pPlane->SetVertexShader(pVS_Object_POM);
+	//pPlane->SetPixelShader(pPS_POM_Redesigned);
+	pPlane->SetPixelShader(pPS_TestPOMBumpmap);
 	pPlane->Draw();
 
 	// モデル別のシェーダーを指定
 	Shader* psList[] = {
-		pPS
+		//pPS,
+		pPS_PBRDisney,
 	};
 
 	// モデルの描画
@@ -144,7 +195,7 @@ void SceneBumpmap::Draw()
 		if (pDrawModel) {
 			// ワールド行列の設定
 			mat[0] = pModel[i]->GetWorld(false);
-			pVS_Bumpmap->WriteBuffer(0, mat);
+			pVS->WriteBuffer(0, mat);
 			// シェーダーを設定して描画
 			pDrawModel->SetVertexShader(pVS);
 			pDrawModel->SetPixelShader(psList[i]);

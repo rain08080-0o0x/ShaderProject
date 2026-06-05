@@ -289,5 +289,18 @@
     <FxCompile Include="PS_PBR.hlsl">
       <Filter>リソース ファイル\PixelShader\Shading</Filter>
     </FxCompile>
+    <FxCompile Include="PS_PBR_Disney.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_POM.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_POM_Redesigned.hlsl">
+      <Filter>リソース ファイル\PixelShader\Shading</Filter>
+    </FxCompile>
+    <FxCompile Include="VS_Object_POM.hlsl">
+      <Filter>リソース ファイル\VertexShader</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_TestPOMBumpmap.hlsl" />
   </ItemGroup>
 </Project>

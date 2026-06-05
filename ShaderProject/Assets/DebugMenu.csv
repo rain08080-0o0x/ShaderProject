@@ -2,7 +2,7 @@ Bool,Menu/00_Info,1
 Bool,Menu/Inspector,1
 Bool,Menu/Hierarchy,1
 Bool,Menu/Scene,1
-Color,00_Info/AmbientColor,0.032055/0.045008/0.142157/0.000000
+Color,00_Info/AmbientColor,0.141676/0.163647/0.328431/0.000000
 Float,00_Info/Camera/Speed,2.000000
 Bool,00_Info/Camera/FlipMouseX,0
 Bool,00_Info/Camera/FlipMouseY,0
