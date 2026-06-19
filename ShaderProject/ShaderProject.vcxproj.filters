@@ -1,103 +1,109 @@
-ï»¿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«">
+    <Filter Include="ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹\System">
       <UniqueIdentifier>{4e17ff4f-a004-4e4a-9470-879b9af60429}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹\App">
       <UniqueIdentifier>{2c3db676-bf36-4efc-a80a-29f79c26d16f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App">
       <UniqueIdentifier>{375453a1-ead7-471e-9fe9-85ec8b5e9c71}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader">
+    <Filter Include="ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader">
       <UniqueIdentifier>{a9755fd2-e8f8-4e2e-854e-68fcfb6a9b68}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\VertexShader">
+    <Filter Include="ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\VertexShader">
       <UniqueIdentifier>{e4c96e83-672c-4720-aa96-8ee0c9525558}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹\DirectX">
       <UniqueIdentifier>{4e65b264-f84d-4758-867f-457aeb6ce2e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\DirectX">
       <UniqueIdentifier>{76d7d9cf-96c4-4ff5-a5f6-7dfd24ef09cb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System">
       <UniqueIdentifier>{23598e8f-8b92-47d1-ac2c-8d127274e433}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\Scene">
       <UniqueIdentifier>{2c3ef8df-31ef-4b70-a418-7eb71b4c4215}</UniqueIdentifier>
     </Filter>
     <Filter Include="ImGui">
       <UniqueIdentifier>{a3d8416b-7d7b-456f-95a2-06b907193f92}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\Scene">
       <UniqueIdentifier>{23d36a75-29b1-435f-a0f7-3718e6f8c461}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\GameObject">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\GameObject">
       <UniqueIdentifier>{44324976-89fc-40ca-8f2f-89d92d299b2e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\GameObject">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\GameObject">
       <UniqueIdentifier>{5d25f3ce-0902-47a7-901e-7334e660e65b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component">
+    <Filter Include="ƒ\[ƒX ƒtƒ@ƒCƒ‹\System\Component">
       <UniqueIdentifier>{d3561d51-9c6e-43d2-9974-8b16ff55a320}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component">
+    <Filter Include="ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System\Component">
       <UniqueIdentifier>{807d7dc2-fd3a-47c1-af4d-c5309e7783db}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading">
+    <Filter Include="ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading">
       <UniqueIdentifier>{e06b38f3-dd74-45c4-84d3-96a34acc7d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap">
+      <UniqueIdentifier>{41aee684-bdce-4b12-86e4-80a42123b9a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Toon">
+      <UniqueIdentifier>{aefb5082-6424-4574-9dfd-81615ac310e3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Startup.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App</Filter>
     </ClCompile>
     <ClCompile Include="Shader.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClCompile>
     <ClCompile Include="MeshBuffer.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClCompile>
     <ClCompile Include="DirectX.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClCompile>
     <ClCompile Include="Geometory.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="Input.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="SceneBase.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="Sprite.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="SceneShading.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\Scene</Filter>
     </ClCompile>
     <ClCompile Include="SceneRoot.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App</Filter>
     </ClCompile>
     <ClCompile Include="imgui.cpp">
       <Filter>ImGui</Filter>
@@ -118,78 +124,81 @@
       <Filter>ImGui</Filter>
     </ClCompile>
     <ClCompile Include="DebugMenu.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="MoveLight.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\GameObject</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="Light.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClCompile>
     <ClCompile Include="Component.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClCompile>
     <ClCompile Include="CameraDCC.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\GameObject</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\GameObject</Filter>
     </ClCompile>
     <ClCompile Include="Model.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System</Filter>
     </ClCompile>
     <ClCompile Include="ModelRenderer.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClCompile>
     <ClCompile Include="UnorderedAccessView.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClCompile>
     <ClCompile Include="SceneBumpmap.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\Scene</Filter>
     </ClCompile>
     <ClCompile Include="SceneLighting.cpp">
-      <Filter>ã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene</Filter>
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneToon.cpp">
+      <Filter>ƒ\[ƒX ƒtƒ@ƒCƒ‹\App\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Defines.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹</Filter>
     </ClInclude>
     <ClInclude Include="Texture.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="Shader.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="MeshBuffer.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="Main.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App</Filter>
     </ClInclude>
     <ClInclude Include="DirectX.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="Geometory.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System</Filter>
     </ClInclude>
     <ClInclude Include="Input.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System</Filter>
     </ClInclude>
     <ClInclude Include="SceneBase.hpp">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System</Filter>
     </ClInclude>
     <ClInclude Include="SceneShading.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Sprite.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System</Filter>
     </ClInclude>
     <ClInclude Include="SceneRoot.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App</Filter>
     </ClInclude>
     <ClInclude Include="imconfig.h">
       <Filter>ImGui</Filter>
@@ -216,91 +225,109 @@
       <Filter>ImGui</Filter>
     </ClInclude>
     <ClInclude Include="DebugMenu.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System</Filter>
     </ClInclude>
     <ClInclude Include="GameObject.hpp">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System</Filter>
     </ClInclude>
     <ClInclude Include="MoveLight.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\GameObject</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClInclude>
     <ClInclude Include="Component.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClInclude>
     <ClInclude Include="Light.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClInclude>
     <ClInclude Include="CameraDCC.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\GameObject</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="Model.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClInclude>
     <ClInclude Include="ModelRenderer.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\System\Component</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\System\Component</Filter>
     </ClInclude>
     <ClInclude Include="UnorderedAccessView.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\DirectX</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\DirectX</Filter>
     </ClInclude>
     <ClInclude Include="SceneLighting.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\Scene</Filter>
     </ClInclude>
     <ClInclude Include="SceneBumpmap.h">
-      <Filter>ãƒ˜ãƒƒãƒ€ãƒ¼ ãƒ•ã‚¡ã‚¤ãƒ«\App\Scene</Filter>
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneToon.h">
+      <Filter>ƒwƒbƒ_[ ƒtƒ@ƒCƒ‹\App\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="VS_Object.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\VertexShader</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\VertexShader</Filter>
     </FxCompile>
     <FxCompile Include="PS_TexColor.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader</Filter>
     </FxCompile>
     <FxCompile Include="PS_Phong.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
-    </FxCompile>
-    <FxCompile Include="PS_Bumpmap.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="VS_Bumpmap.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\VertexShader</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\VertexShader</Filter>
     </FxCompile>
     <FxCompile Include="PS_AllLightins.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="PS_PointLight.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="PS_RimLight.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="PS_RimLights.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="PS_Specular.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="PS_SpotLight.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
-    </FxCompile>
-    <FxCompile Include="PS_PBR.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
-    </FxCompile>
-    <FxCompile Include="PS_PBR_Disney.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
-    </FxCompile>
-    <FxCompile Include="PS_POM.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
-    </FxCompile>
-    <FxCompile Include="PS_POM_Redesigned.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\PixelShader\Shading</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
     </FxCompile>
     <FxCompile Include="VS_Object_POM.hlsl">
-      <Filter>ãƒªã‚½ãƒ¼ã‚¹ ãƒ•ã‚¡ã‚¤ãƒ«\VertexShader</Filter>
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\VertexShader</Filter>
     </FxCompile>
-    <FxCompile Include="PS_TestPOMBumpmap.hlsl" />
+    <FxCompile Include="PS_Bumpmap.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_PBR.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_PBR_Disney.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_POM.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_POM_Redesigned.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_Toon.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Toon</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_Outline.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Toon</Filter>
+    </FxCompile>
+    <FxCompile Include="PS_TestPOMBumpmap.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading\Bumpmap</Filter>
+    </FxCompile>
+    <FxCompile Include="VS_Outline.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\VertexShader</Filter>
+    </FxCompile>
+
+    <FxCompile Include="PS_AlphaDiher_for.hlsl">
+      <Filter>ƒŠƒ\[ƒX ƒtƒ@ƒCƒ‹\PixelShader\Shading</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

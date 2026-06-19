@@ -10,6 +10,7 @@
 #include "SceneShading.h"
 #include "SceneLighting.h"
 #include "SceneBumpmap.h"
+#include "SceneToon.h"
 
 
 void SceneRoot::Init()
@@ -36,10 +37,12 @@ void SceneRoot::Init()
 		if (strcmp(name, "Shading") == 0) AddSubScene<SceneShading>();
 		if (strcmp(name, "Lighting") == 0) AddSubScene<SceneLighting>();
 		if (strcmp(name, "BumpMap") == 0) AddSubScene<SceneBumpmap>();
+		if (strcmp(name, "Toon") == 0) AddSubScene<SceneToon>();
 	}, true);
 	list->AddListItem("Shading");
 	list->AddListItem("Lighting");
 	list->AddListItem("BumpMap");
+	list->AddListItem("Toon");
 	scene.AddItem(list);
 #else
 	// リリース時の開始シーン

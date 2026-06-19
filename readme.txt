@@ -1,0 +1,11 @@
+視差遮断マッピング
+imguiで
+metalic
+roughness
+Specular
+BaseColorPower
+HeightScale
+をいじれるようにしました。
+あと、InputFloatだったのをDragFloatに変更しました。
+ディズニーベースの拡散反射がどの程度まであるのかが分からなかったので
+ある程度はいい感じに光が当たるようにしました。

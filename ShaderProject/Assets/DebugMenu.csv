@@ -1,4 +1,4 @@
-Bool,Menu/00_Info,1
+Bool,Menu/00_Info,0
 Bool,Menu/Inspector,1
 Bool,Menu/Hierarchy,1
 Bool,Menu/Scene,1
@@ -11,4 +11,4 @@ Float,00_Info/Grid/Size,20.000000
 Float,00_Info/Grid/Margin,1.000000
 Color,00_Info/Grid/Color,1.000000/1.000000/1.000000/1.000000
 Bool,00_Info/Grid/Axis,1
-List,Scene/Scenes,2
+List,Scene/Scenes,3

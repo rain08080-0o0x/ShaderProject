@@ -32,7 +32,7 @@ Texture2D heightMap : register(t2);
 float4 main(PS_IN pin) : SV_TARGET
 {
     // 高さマップを分割探索する回数を決める
-    const int HeightSamples = 32;
+    const int HeightSamples = 64;
 
     // 法線・接ベクトル・従法線を作り、ワールド空間の視線方向を接空間へ変換する
     float3 N = normalize(pin.normal);
